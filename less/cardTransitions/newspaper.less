@@ -1,0 +1,53 @@
+.ct-card-rotateOutNewspaper {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: rotateOutNewspaper .5s both ease-in;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation: rotateOutNewspaper .5s both ease-in;
+    transform-origin: 50% 50%;
+    animation: rotateOutNewspaper .5s both ease-in;
+}
+.ct-card-rotateInNewspaper {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: rotateInNewspaper .5s both ease-out;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation: rotateInNewspaper .5s both ease-out;
+    transform-origin: 50% 50%;
+    animation: rotateInNewspaper .5s both ease-out;
+}
+/********************************* keyframes **************************************/
+@-webkit-keyframes rotateOutNewspaper {
+    to {
+        -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@-moz-keyframes rotateOutNewspaper {
+    to {
+        -moz-transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@keyframes rotateOutNewspaper {
+    to {
+        transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes rotateInNewspaper {
+    from {
+        -webkit-transform: translateZ(-3000px) rotateZ(-360deg);
+        opacity: 0;
+    }
+}
+@-moz-keyframes rotateInNewspaper {
+    from {
+        -moz-transform: translateZ(-3000px) rotateZ(-360deg);
+        opacity: 0;
+    }
+}
+@keyframes rotateInNewspaper {
+    from {
+        transform: translateZ(-3000px) rotateZ(-360deg);
+        opacity: 0;
+    }
+}

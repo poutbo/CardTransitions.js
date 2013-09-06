@@ -1,0 +1,105 @@
+.ct-card-rotateFoldRight {
+    -webkit-transform-origin: 0% 50%;
+    -webkit-animation: rotateFoldRight .7s both ease;
+    -moz-transform-origin: 0% 50%;
+    -moz-animation: rotateFoldRight .7s both ease;
+    transform-origin: 0% 50%;
+    animation: rotateFoldRight .7s both ease;
+}
+.ct-card-rotateFoldLeft {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-animation: rotateFoldLeft .7s both ease;
+    -moz-transform-origin: 100% 50%;
+    -moz-animation: rotateFoldLeft .7s both ease;
+    transform-origin: 100% 50%;
+    animation: rotateFoldLeft .7s both ease;
+}
+.ct-card-rotateFoldTop {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation: rotateFoldTop .7s both ease;
+    -moz-transform-origin: 50% 100%;
+    -moz-animation: rotateFoldTop .7s both ease;
+    transform-origin: 50% 100%;
+    animation: rotateFoldTop .7s both ease;
+}
+.ct-card-rotateFoldBottom {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation: rotateFoldBottom .7s both ease;
+    -moz-transform-origin: 50% 0%;
+    -moz-animation: rotateFoldBottom .7s both ease;
+    transform-origin: 50% 0%;
+    animation: rotateFoldBottom .7s both ease;
+}
+/********************************* keyframes **************************************/
+@-webkit-keyframes rotateFoldRight {
+    to {
+        opacity: 0;
+        -webkit-transform: translateX(100%) rotateY(90deg);
+    }
+}
+@-moz-keyframes rotateFoldRight {
+    to {
+        opacity: 0;
+        -moz-transform: translateX(100%) rotateY(90deg);
+    }
+}
+@keyframes rotateFoldRight {
+    to {
+        opacity: 0;
+        transform: translateX(100%) rotateY(90deg);
+    }
+}
+@-webkit-keyframes rotateFoldLeft {
+    to {
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotateY(-90deg);
+    }
+}
+@-moz-keyframes rotateFoldLeft {
+    to {
+        opacity: 0;
+        -moz-transform: translateX(-100%) rotateY(-90deg);
+    }
+}
+@keyframes rotateFoldLeft {
+    to {
+        opacity: 0;
+        transform: translateX(-100%) rotateY(-90deg);
+    }
+}
+@-webkit-keyframes rotateFoldTop {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(-100%) rotateX(90deg);
+    }
+}
+@-moz-keyframes rotateFoldTop {
+    to {
+        opacity: 0;
+        -moz-transform: translateY(-100%) rotateX(90deg);
+    }
+}
+@keyframes rotateFoldTop {
+    to {
+        opacity: 0;
+        transform: translateY(-100%) rotateX(90deg);
+    }
+}
+@-webkit-keyframes rotateFoldBottom {
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(100%) rotateX(-90deg);
+    }
+}
+@-moz-keyframes rotateFoldBottom {
+    to {
+        opacity: 0;
+        -moz-transform: translateY(100%) rotateX(-90deg);
+    }
+}
+@keyframes rotateFoldBottom {
+    to {
+        opacity: 0;
+        transform: translateY(100%) rotateX(-90deg);
+    }
+}

@@ -1,0 +1,105 @@
+.ct-card-rotatePushLeft {
+    -webkit-transform-origin: 0% 50%;
+    -webkit-animation: rotatePushLeft .8s both ease;
+    -moz-transform-origin: 0% 50%;
+    -moz-animation: rotatePushLeft .8s both ease;
+    transform-origin: 0% 50%;
+    animation: rotatePushLeft .8s both ease;
+}
+.ct-card-rotatePushRight {
+    -webkit-transform-origin: 100% 50%;
+    -webkit-animation: rotatePushRight .8s both ease;
+    -moz-transform-origin: 100% 50%;
+    -moz-animation: rotatePushRight .8s both ease;
+    transform-origin: 100% 50%;
+    animation: rotatePushRight .8s both ease;
+}
+.ct-card-rotatePushTop {
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation: rotatePushTop .8s both ease;
+    -moz-transform-origin: 50% 0%;
+    -moz-animation: rotatePushTop .8s both ease;
+    transform-origin: 50% 0%;
+    animation: rotatePushTop .8s both ease;
+}
+.ct-card-rotatePushBottom {
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation: rotatePushBottom .8s both ease;
+    -moz-transform-origin: 50% 100%;
+    -moz-animation: rotatePushBottom .8s both ease;
+    transform-origin: 50% 100%;
+    animation: rotatePushBottom .8s both ease;
+}
+/********************************* keyframes **************************************/
+@-webkit-keyframes rotatePushLeft {
+    to {
+        opacity: 0;
+        -webkit-transform: rotateY(90deg);
+    }
+}
+@-moz-keyframes rotatePushLeft {
+    to {
+        opacity: 0;
+        -moz-transform: rotateY(90deg);
+    }
+}
+@keyframes rotatePushLeft {
+    to {
+        opacity: 0;
+        transform: rotateY(90deg);
+    }
+}
+@-webkit-keyframes rotatePushRight {
+    to {
+        opacity: 0;
+        -webkit-transform: rotateY(-90deg);
+    }
+}
+@-moz-keyframes rotatePushRight {
+    to {
+        opacity: 0;
+        -moz-transform: rotateY(-90deg);
+    }
+}
+@keyframes rotatePushRight {
+    to {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+}
+@-webkit-keyframes rotatePushTop {
+    to {
+        opacity: 0;
+        -webkit-transform: rotateX(-90deg);
+    }
+}
+@-moz-keyframes rotatePushTop {
+    to {
+        opacity: 0;
+        -moz-transform: rotateX(-90deg);
+    }
+}
+@keyframes rotatePushTop {
+    to {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+}
+@-webkit-keyframes rotatePushBottom {
+    to {
+        opacity: 0;
+        -webkit-transform: rotateX(90deg);
+    }
+}
+@-moz-keyframes rotatePushBottom {
+    to {
+        opacity: 0;
+        -moz-transform: rotateX(90deg);
+    }
+}
+@keyframes rotatePushBottom {
+    to {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+}

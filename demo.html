@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>CardTransitions.js</title>
+    <link rel="stylesheet" href="css/cardTransitions.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="ct-wrapper ct-next" ct-in="moveFromRightFade" ct-out="rotateFoldLeft ontop">
+        <div class="ct-card">
+            <h2>card 1</h2>
+            <button class="ct-prev" ct-in="moveFromLeftFade" ct-out="rotateFoldRight">Prev</button>
+            <button class="ct-next" ct-in="moveFromRightFade" ct-out="rotateFoldLeft">Next</button>
+            <button class="ct-to" ct-to=".no3" ct-in="moveFromRightFade" ct-out="rotateFoldLeft">to3</button>
+        </div>
+        <div class="ct-card">
+            <h2>card 2</h2>
+            <button class="ct-prev" ct-in="moveFromLeftFade" ct-out="rotateFoldRight">Prev</button>
+            <button class="ct-next" ct-in="moveFromRightFade" ct-out="rotateFoldLeft">Next</button>
+        </div>
+        <div class="ct-card no3">
+            <h2>card 3</h2>
+            <button class="ct-prev" ct-in="moveFromLeftFade" ct-out="rotateFoldRight">Prev</button>
+            <button class="ct-next" ct-in="moveFromRightFade" ct-out="rotateFoldLeft">Next</button>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/cardTransitions.js"></script>
+</body>
+</html>

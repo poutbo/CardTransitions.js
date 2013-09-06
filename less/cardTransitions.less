@@ -1,0 +1,57 @@
+@import "cardTransitions/move.less";
+@import "cardTransitions/fade.less";
+@import "cardTransitions/scale.less";
+@import "cardTransitions/rotate.less";
+@import "cardTransitions/flip.less";
+@import "cardTransitions/fall.less";
+@import "cardTransitions/newspaper.less";
+@import "cardTransitions/push.less";
+@import "cardTransitions/pull.less";
+@import "cardTransitions/fold.less";
+@import "cardTransitions/unfold.less";
+@import "cardTransitions/room.less";
+@import "cardTransitions/cube.less";
+@import "cardTransitions/carousel.less";//sides
+@import "cardTransitions/slide.less";
+@import "cardTransitions/delay.less";
+
+.ct-wrapper {
+    position: relative;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+    display: block;
+    overflow: hidden;
+}
+.ct-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.ct-card-current{
+    visibility: visible;
+    z-index: 1;
+}
+
+.ct-card-ontop {
+    z-index: 999;
+}
+//Triggers (menu and button)
+.ct-prve,
+.ct-next,
+.ct-to, {
+    cursor: pointer;
+}

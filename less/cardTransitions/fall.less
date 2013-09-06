@@ -1,0 +1,64 @@
+.ct-card-rotateFall {
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation: rotateFall 1s both ease-in;
+    -moz-transform-origin: 0% 0%;
+    -moz-animation: rotateFall 1s both ease-in;
+    transform-origin: 0% 0%;
+    animation: rotateFall 1s both ease-in;
+}
+/********************************* keyframes **************************************/
+//fall
+@-webkit-keyframes rotateFall {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+    20% {
+        -webkit-transform: rotateZ(10deg);
+        -webkit-animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: rotateZ(17deg);
+    }
+    60% {
+        -webkit-transform: rotateZ(16deg);
+    }
+    100% {
+        -webkit-transform: translateY(100%) rotateZ(17deg);
+    }
+}
+@-moz-keyframes rotateFall {
+    0% {
+        -moz-transform: rotateZ(0deg);
+    }
+    20% {
+        -moz-transform: rotateZ(10deg);
+        -moz-animation-timing-function: ease-out;
+    }
+    40% {
+        -moz-transform: rotateZ(17deg);
+    }
+    60% {
+        -moz-transform: rotateZ(16deg);
+    }
+    100% {
+        -moz-transform: translateY(100%) rotateZ(17deg);
+    }
+}
+@keyframes rotateFall {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: rotateZ(17deg);
+    }
+    60% {
+        transform: rotateZ(16deg);
+    }
+    100% {
+        transform: translateY(100%) rotateZ(17deg);
+    }
+}
